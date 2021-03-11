@@ -91,6 +91,26 @@ body {
   transition: all 0.4s ease;
 }
 
+/*Dropdown menu */
+#portfolio{
+  position: relative;
+}
+
+#slim{
+  position: absolute;
+  display: none;
+  background-color: #2FA0B8;
+  opacity: 0.5;
+  left: -15px;
+  right: 0;
+  top: 65px;
+  height: auto;
+}
+#portfolio:hover #slim{
+  display: block;
+}
+
+
 /* Media qurey section */
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -363,6 +383,28 @@ body {
   /* .myH2 {
     width: 200px;
   }  */
+  #slim{
+    position: absolute;
+    top:0;
+    left:180px;
+    display: none;
+  }
+  
+  #slim a {
+    padding: 0px;
+  }
+  #slim li {
+    height: 45px;
+  }
+  
+  
+  #portfolio{
+    position: relative;
+  }
+  
+  #portfolio:hover #slim{
+    display: block;
+  }
 }
 
 .logo {
@@ -370,26 +412,3 @@ body {
 }
 
 
-#slim{
-  position: absolute;
-  /* background-color: #00e676; */
-  top:0;
-  left:180px;
-  display: none;
-}
-
-#slim a {
-  padding: 0px;
-}
-#slim li {
-  height: 45px;
-}
-
-
-#portfolio{
-  position: relative;
-}
-
-#portfolio:hover #slim{
-  display: block;
-}
